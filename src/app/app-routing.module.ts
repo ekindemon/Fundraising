@@ -4,12 +4,15 @@ import { IndexComponent } from 'src/app/main/index/index.component'
 import { AboutComponent } from 'src/app/main/about/about.component'
 import { InfoComponent } from 'src/app/main/info/info.component';
 import { KnowledgeComponent } from 'src/app/main/knowledge/knowledge.component';
+import { AuthorComponent } from "src/app/main/author/author.component";
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
+  { path: 'index', component: AboutComponent},
+  { path: 'author', component: AuthorComponent},
   { path: 'about', component: AboutComponent},
   { path: 'info', component: InfoComponent},
-  { path: 'sence', component: KnowledgeComponent }
+  { path: 'contact', component: KnowledgeComponent }
 ];
 
 @NgModule({

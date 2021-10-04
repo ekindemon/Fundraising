@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-index',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _formBuilder: FormBuilder) { }
+  firstFormGroup: FormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required]
+  });
+  secondFormGroup: FormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required]
+  });
 
-  ngOnInit(): void {
-  }
+  ngOnInit():void {}
 
 }

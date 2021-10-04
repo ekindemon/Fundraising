@@ -1,15 +1,17 @@
 <div class="mat-primary">
   <mat-toolbar color="primary">
-    <a mat-button [routerLink]="['/']" [ngStyle]="{ width: '50px', display:'flex'}" matRipple  [matRippleDisabled]=false>
+    <a mat-button [routerLink]="['/']" [ngStyle]="{ width: '50px', display:'flex'}" matRipple [matRippleDisabled]=false>
       <div style="display: flex; width:50px;">
         <img src="https://maoup.com.tw/wp-content/uploads/2015/07/313.png" width="100%" alt="">
-        <h2>快樂凱特</h2>
+        <h2></h2>
       </div>
     </a>
     <span class="example-spacer"></span>
-    <a mat-button routerLinkActive="active" [routerLink]="['/about']">網站介紹</a>
-    <a mat-button routerLinkActive="active" [routerLink]="['/info']">資訊快報</a>
-    <a mat-button routerLinkActive="active" [routerLink]="['/sence']">相關資訊</a>
+    <a mat-button [routerLink]="['/']">首頁</a>
+    <a mat-button routerLinkActive="active" [routerLink]="['/author']">作者群</a>
+    <a mat-button routerLinkActive="active" [routerLink]="['/about']">作品集</a>
+    <a mat-button routerLinkActive="active" [routerLink]="['/info']">留言板</a>
+    <a mat-button routerLinkActive="active" [routerLink]="['/contact']">聯絡我們</a>
     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button> -->
