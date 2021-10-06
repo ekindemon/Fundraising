@@ -21,7 +21,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { KnowledgeComponent } from './main/knowledge/knowledge.component';
+import { ContactComponent } from './main/contact/contact.component';
 import { AuthorComponent } from './main/author/author.component';
 
 
@@ -31,7 +31,7 @@ import { AuthorComponent } from './main/author/author.component';
     IndexComponent,
     AboutComponent,
     InfoComponent,
-    KnowledgeComponent,
+    ContactComponent,
     AuthorComponent,
   ],
   imports: [

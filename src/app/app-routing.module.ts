@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from 'src/app/main/index/index.component'
 import { AboutComponent } from 'src/app/main/about/about.component'
 import { InfoComponent } from 'src/app/main/info/info.component';
-import { KnowledgeComponent } from 'src/app/main/knowledge/knowledge.component';
+import { ContactComponent } from 'src/app/main/contact/contact.component';
 import { AuthorComponent } from "src/app/main/author/author.component";
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'author', component: AuthorComponent},
   { path: 'about', component: AboutComponent},
   { path: 'info', component: InfoComponent},
-  { path: 'contact', component: KnowledgeComponent }
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

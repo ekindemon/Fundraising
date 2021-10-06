@@ -1,0 +1,28 @@
+<div class="content">
+  <h2>聯絡我們</h2>
+  <form class="example-form" [formGroup]="form">
+    <mat-grid-list cols="1" rowHeight="100px">
+      <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+          <mat-label>稱謂</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+          <mat-label>信箱</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="example-full-width">
+          <mat-label>内容</mat-label>
+          <textarea matInput formControlName="content"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button>發送</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
+</div>
